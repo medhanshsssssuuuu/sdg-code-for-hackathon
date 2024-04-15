@@ -1,0 +1,92 @@
+/* Your existing CSS styles */
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard', cursive;
+  background-color: #fce5cd; /* Light orange */
+  margin: 0;
+  padding: 0;
+}
+
+#game-container {
+  position: relative; /* Make the container relative for absolute positioning */
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #2e8b57; /* Sea green */
+  margin-bottom: 30px;
+}
+
+#question {
+  font-size: 24px;
+  color: #ff69b4; /* Hot pink */
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.option {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid #ff4500; /* Orange Red */
+  border-radius: 20px;
+  background-color: #ffff99; /* Lemon Chiffon */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+  background-color: #ff6347; /* Tomato */
+  color: #fff; /* White */
+  border-color: #fff;
+}
+
+#next-btn {
+  padding: 10px 20px;
+  background-color: #4682b4; /* Steel Blue */
+  color: #fff; /* White */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#next-animate_animated:hover {
+  background-color: #4169e1; /* Royal Blue */
+}
+
+/* New CSS style for incorrect options */
+.option.incorrect {
+  background-color: #ff6347; /* Tomato */
+  color: #fff; /* White */
+}
+
+/* New CSS style for correct options */
+.option.correct {
+  background-color: #32cd32; /* Lime Green */
+  color: #fff; /* White */
+}
+
+/* New CSS style for the timer */
+#timer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #8a2be2; /* Blue Violet */
+}
+
+/* New CSS style for the back button */
+a.back-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
+  color: #4169e1; /* Royal Blue */
+  text-decoration: none;
+}
